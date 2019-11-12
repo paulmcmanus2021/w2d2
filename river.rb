@@ -1,18 +1,18 @@
 class River
 
-  attr_reader :name, :number_of_fish
+  attr_reader :name
 
-  def initialize(name)
+  def initialize(name,fish_array)
     @name = name
-    @number_of_fish = number_of_fish
-    @fish = ["Larry","Barry","Garry"]
+    @fish_array = fish_array
   end
 
+  def fish_count
+    return @fish_array.length
+  end
 
+  def lose_fish(fish)
+    @fish_array.delete(fish)
+  end
 
-
-  # def fish_count
-  #   return @fish.length
-  # end
-#
 end
