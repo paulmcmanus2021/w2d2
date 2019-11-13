@@ -34,6 +34,7 @@ class TestBear < MiniTest::Test
 
   def test_bear_roar
     noise = @bear.bear_roar("ROOOOOAAARR")
+    assert_equal("ROOOOOAAARR", noise)
   end
 
 
